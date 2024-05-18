@@ -64,7 +64,7 @@ export const Header = () => {
         <div className="ml-auto flex items-center">
   <div>
     <Button asChild variant="secondary" style={{ marginRight: '15px', background: 'linear-gradient(to right, #004aad, #38b6ff)', width: '5rem', height: '2.5rem'}}>
-      <Link href="/login" className={`${poppinsNavs.className} sm:text-lg md:text-lg lg:text-md`}>Login</Link>
+      <Link href="/login" className={`${poppinsNavs.className} sm:text-lg md:text-lg lg:text-md`}>Join</Link>
     </Button>
   </div>
 

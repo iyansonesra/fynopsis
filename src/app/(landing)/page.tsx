@@ -41,7 +41,7 @@ const HomePage = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="w-ful border border-white bg-transparent px-4 py-2 rounded-xl focus:outline-none focus:border-blue-500"
+              className={`${poppinsTitle.className} button-input w-ful border border-white bg-transparent px-4 py-2 rounded-xl focus:outline-none focus:border-blue-500`}
               style={{
                 width: '50vw', // This makes the input 80% of the viewport width
                 maxWidth: '6000px', // You can set a maximum width for larger screens
@@ -53,7 +53,7 @@ const HomePage = () => {
             />
             <Button
               variant="primary"
-              className="ml-2"
+              className={`${poppinsTitle.className} button-input ml-2`}
               style={{
                 backgroundImage: 'linear-gradient(to right, #004aad, #38b6ff)',
                 transition: 'background-image 0.5s',
