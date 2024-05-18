@@ -93,7 +93,71 @@
   color: transparent;
 }
 
+@media screen and (max-width: 1366px) {
+  .firstBox {
+    padding-top: 1rem;
+    background-color: #004aad;
+    border-radius: 20px;
+    height: 30rem;
+    box-shadow: 0 0 5px #0048aa;
+    width: 100%;
+    align-items: center;
+  }
 
+  .horizontalBoxContainer {
+    max-width: 95%; 
+    width: 100%;
+    display: flex;
+    gap: 2rem; 
+    padding: 2rem;
+  }
+  
+  .halfBox {
+    padding-top: 1rem;
+    background-color: #020b17;
+    border-radius: 20px;
+    height: 30rem;
+    box-shadow: 0 0 5px #0048aa;
+    width: 100%;
+  
+  }
+
+  .headBoxText {
+    font-size: 2rem;
+    text-align: center;
+  
+  }
+  
+}
+
+@media screen and (max-width: 1024px) {
+
+ 
+
+}
+
+@media screen and (max-width: 768px) {
+  .horizontalBoxContainer {
+    max-width: 100%; 
+    width: 100%;
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column;
+    gap: 2rem; 
+    padding: 2rem;
+  }
+  
+  .halfBox {
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .horizontalBoxContainer {
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column;
+  }
+  
+
+}
 
 .animated-spinner {
   transform-origin: center;
