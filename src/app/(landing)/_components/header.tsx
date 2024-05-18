@@ -31,8 +31,8 @@ export const Header = () => {
 
   return (
     <header className="px-2 py-4 lg:py-6">
-      <div className="container flex items-center gap-2 p-0">
-        <DropdownMenu>
+      <div className="flex items-center gap-2 p-0">
+        {/* <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button
               className="focus:outline-none focus:ring-1 md:hidden"
@@ -51,37 +51,25 @@ export const Header = () => {
               ))}
             </div>
           </DropdownMenuContent>
-        </DropdownMenu>
+        </DropdownMenu> */}
 
         <Image
           src = {bg}
-          width={20}
-          height={20}
+          width={60}
+          height={60}
           alt="Picture of the author"
-          style={{ paddingLeft: '2%' }}
-        />  <span className={`${poppinsLogo.className} text-lg`}>{APP_TITLE}</span>
+          style={{}}
+        />  <span className={`${poppinsLogo.className} sm:text-2xl md:text-2xl lg:text-2xl `}>{APP_TITLE}</span>
+        
+        <div className="ml-auto flex items-center">
+  <div>
+    <Button asChild variant="secondary" style={{ marginRight: '15px', background: 'linear-gradient(to right, #004aad, #38b6ff)', width: '5rem', height: '2.5rem'}}>
+      <Link href="/login" className={`${poppinsNavs.className} sm:text-lg md:text-lg lg:text-md`}>Login</Link>
+    </Button>
+  </div>
 
-        {/* <nav className="ml-auto hidden gap-4 sm:gap-6 md:flex">
-          
-        </nav> */}
-        <div className="ml-auto flex items-center gap-10">
-          <div className="ml-auto hidden gap-4 sm:gap-6 md:flex">
-            {routes.map(({ name, href }) => (
-              <div key={name}>
-                <Link
-                  className="text-sm font-medium text-muted-foreground/70 transition-colors hover:text-muted-foreground"
-                  href={href}
-                >
-                  <span className={poppinsNavs.className}>{name}</span>
-                </Link>
-              </div>
-            ))}
+</div>
 
-          </div>
-          <Button asChild variant={"secondary"} style={{ marginRight: '15px', background: 'linear-gradient(to right, #004aad, #38b6ff)'}}>
-            <Link href="/login" className={poppinsNavs.className}>Login</Link>
-          </Button>
-        </div>
       </div>
     </header>
   );

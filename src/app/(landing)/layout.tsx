@@ -11,10 +11,20 @@ export const metadata: Metadata = {
   description: "A Next.js starter with T3 stack and Lucia auth.",
 };
 
+
 function LandingPageLayout({ children }: { children: ReactNode }) {
   return (
     <>
-      <div style={{ backgroundImage: `url(${bg.src})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
+      <div style={{
+        backgroundImage: `url(${bg.src})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        width: "100%",
+        height: "100vh", // Default height for landscape orientation
+        maxHeight: "100%", // Max height for portrait orientation
+        overflow: "hidden", // Hide overflow content
+      }}>
         <Header />
         {children}
         <div className="h-20"></div>
@@ -22,7 +32,7 @@ function LandingPageLayout({ children }: { children: ReactNode }) {
 
       <CardBottom />
 
-      
+
     </>
   );
 }

@@ -26,14 +26,14 @@ export const metadata: Metadata = {
 const HomePage = () => {
   return (
     <>
-      <section className="grid w-full max-w-[100%] flex-col py-10 md:py-12 px-4 sm:px-6 lg:px-8">
-        <div className="p-4">
-          <h1 className={`${poppinsTitle.className} text-white text-5xl font-bold sm:text-5xl md:text-6xl lg:text-8xl max-w-[90%] sm:max-w-[70%] md:max-w-[80%] lg:max-w-[90%]`}>
+      <section className="pl-6 md:pl-12 lg:pl-16 xl:pl-12 pt-8">
+        <div className="">
+          <h1 className={`${poppinsTitle.className} title-text max-w-[90%] sm:max-w-[70%] md:max-w-[80%] lg:max-w-[80%]`}>
             The <span className="gradient-text">Future</span> of Financial News
           </h1>
 
 
-          <p className={`${poppinsSub.className} text-balance mb-10 mt-4 text-muted-foreground md:text-lg lg:text-xl mx-auto sm:mx-auto md:mx-auto lg:mx-0`}>
+          <p className={`${poppinsSub.className} sub-text`}>
             Cut the noise out. Get the news you deserve.
           </p>
 
@@ -41,7 +41,15 @@ const HomePage = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="w-full md:w-3/4 lg:w-2/4 xl:w-1/3 border border-white bg-transparent px-4 py-2 rounded-md focus:outline-none focus:border-purple-500"
+              className="w-ful border border-white bg-transparent px-4 py-2 rounded-xl focus:outline-none focus:border-blue-500"
+              style={{
+                width: '50vw', // This makes the input 80% of the viewport width
+                maxWidth: '6000px', // You can set a maximum width for larger screens
+                minHeight: '50px', // This makes the input 80% of the viewport width
+                height: '4vw', // This makes the input 80% of the viewport width
+                maxHeight: '600px',
+
+              }}
             />
             <Button
               variant="primary"
@@ -49,7 +57,14 @@ const HomePage = () => {
               style={{
                 backgroundImage: 'linear-gradient(to right, #004aad, #38b6ff)',
                 transition: 'background-image 0.5s',
-                padding: '1.9% 2%', // Adjust the padding to increase the height
+                padding: '1.9% 2%', 
+                width: '10vw', // This makes the input 80% of the viewport width
+                minWidth: '100px',
+                minHeight: '50px',
+                maxWidth: '200px', // You can set a maximum width for larger screens
+                height: '4vw', // This makes the input 80% of the viewport width
+                maxHeight: '600px',
+                
               }}
             >
               Join Waitlist

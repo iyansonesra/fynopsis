@@ -87,13 +87,118 @@
   font-family: 'Poppins', sans-serif;
 }
 
+
+
 .gradient-text {
   background-image: linear-gradient(to right, #004aad, #38b6ff);
   -webkit-background-clip: text;
   color: transparent;
 }
+@media screen and (min-width: 1921px) {
+  .title-text {
+    font-size: 10vw; /* Adjust the font size as needed */
+    line-height: 120%;
+  }
+
+  .sub-text {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .firstBox {
+    padding-top: 1rem;
+    background-color: #004aad;
+    border-radius: 20px;
+    height: 30rem;
+    box-shadow: 0 0 5px #0048aa;
+    width: 100%;
+    align-items: center;
+  }
+
+  .horizontalBoxContainer {
+    max-width: 95%; 
+    width: 100%;
+    display: flex;
+    gap: 2rem; 
+    padding: 2rem;
+  }
+  
+  .halfBox {
+    padding-top: 1rem;
+    background-color: #020b17;
+    border-radius: 20px;
+    height: 30rem;
+    box-shadow: 0 0 5px #0048aa;
+    width: 100%;
+  
+  }
+
+  .headBoxText {
+    font-size: 2rem;
+    text-align: center;
+  
+  }
+  
+}
+@media screen and (max-width: 1920px) {
+  .title-text {
+    padding-top: 1rem;
+    font-size: 9vw; /* Adjust the font size as needed */
+    line-height: 120%;
+  }
+
+  .sub-text {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+  }
+  
+  .firstBox {
+    padding-top: 1rem;
+    background-color: #004aad;
+    border-radius: 20px;
+    height: 30rem;
+    box-shadow: 0 0 5px #0048aa;
+    width: 100%;
+    align-items: center;
+  }
+
+  .horizontalBoxContainer {
+    max-width: 95%; 
+    width: 100%;
+    display: flex;
+    gap: 2rem; 
+    padding: 2rem;
+  }
+  
+  .halfBox {
+    padding-top: 1rem;
+    background-color: #020b17;
+    border-radius: 20px;
+    height: 30rem;
+    box-shadow: 0 0 5px #0048aa;
+    width: 100%;
+  
+  }
+
+  .headBoxText {
+    font-size: 2rem;
+    text-align: center;
+  
+  }
+  
+}
+
 
 @media screen and (max-width: 1366px) {
+  .title-text {
+    font-size: 6rem; /* Adjust the font size as needed */
+  }
+
+  .sub-text {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
   .firstBox {
     padding-top: 1rem;
     background-color: #004aad;
@@ -132,11 +237,22 @@
 
 @media screen and (max-width: 1024px) {
 
- 
+  .sub-text {
+    font-size: 1.25rem;
+  }
 
 }
 
 @media screen and (max-width: 768px) {
+  .title-text {
+    font-size: 12vw; /* Adjust the font size as needed */
+    line-height: 120%;
+  }
+
+  .sub-text {
+    font-size: .85rem;
+    max-width: 70%;
+  }
   .horizontalBoxContainer {
     max-width: 100%; 
     width: 100%;
