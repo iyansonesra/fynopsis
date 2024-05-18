@@ -14,9 +14,7 @@ export const env = createEnv({
         (str) => !str.includes("YOUR_MYSQL_URL_HERE"),
         "You forgot to change the default URL",
       ),
-    NODE_ENV: z
-      .enum(["development", "test", "production"])
-      .default("development"),
+    NODE_ENV: z.enum(["development", "test", "production"]).default("development"),
     DISCORD_CLIENT_ID: z.string().trim().min(1),
     DISCORD_CLIENT_SECRET: z.string().trim().min(1),
     SMTP_HOST: z.string().trim().min(1),
@@ -26,6 +24,7 @@ export const env = createEnv({
     STRIPE_API_KEY: z.string().trim().min(1),
     STRIPE_WEBHOOK_SECRET: z.string().trim().min(1),
     STRIPE_PRO_MONTHLY_PLAN_ID: z.string().trim().min(1),
+    MONGODB_URI: z.string().url(),
   },
 
   /**
@@ -57,6 +56,7 @@ export const env = createEnv({
     STRIPE_PRO_MONTHLY_PLAN_ID: process.env.STRIPE_PRO_MONTHLY_PLAN_ID,
     // Client-side env vars
     NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL,
+    MONGODB_URI: process.env.MONGODB_URI,
   },
   /**
    * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation. This is especially

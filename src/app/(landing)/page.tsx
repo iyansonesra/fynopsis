@@ -1,5 +1,6 @@
 import { type Metadata } from "next";
 import { Button } from "@/components/ui/button";
+import SubmitEmail from "src/app/(landing)/_components/submitMail";
 import {
   Drizzle,
   LuciaAuth,
@@ -37,27 +38,10 @@ const HomePage = () => {
             Cut the noise out. Get the news you deserve.
           </p>
 
-          <form className="textr-center">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="w-full md:w-3/4 lg:w-2/4 xl:w-1/3 border border-white bg-transparent px-4 py-2 rounded-md focus:outline-none focus:border-purple-500"
-            />
-            <Button
-              variant="primary"
-              className="ml-2"
-              style={{
-                backgroundImage: 'linear-gradient(to right, #004aad, #38b6ff)',
-                transition: 'background-image 0.5s',
-                padding: '1.9% 2%', // Adjust the padding to increase the height
-              }}
-            >
-              Join Waitlist
-            </Button>
-          </form>
+  
         </div>
       </section>
-
+      <SubmitEmail/>
 
     </>
   );
